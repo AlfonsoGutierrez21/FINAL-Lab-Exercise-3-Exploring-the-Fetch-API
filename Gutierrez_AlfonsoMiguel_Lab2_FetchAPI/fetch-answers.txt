@@ -1,0 +1,34 @@
+1. What are the primary differences between using XMLHttpRequest and the Fetch API?
+
+XMLHttpRequest is an older, more complex approach in terms of the number of steps and callback functions required to retrieve data. Compare to Fetch API, which uses Promises to provide more simplicity in the code. Fetch is more capable dealing with responses as JSON and has a modern approach to features. Overall, Fetch is simply easier and better than XMLHttpRequest.
+
+------------------------------------------------------------
+
+2. Why is the Fetch API considered more modern and readable?
+
+Fetch is easier to read and has less syntax than many of the other  
+methods, making it easier to understand and process. If you were building 
+functionality with callbacks, you wouldn’t end up with stacks of convoluted code,
+yet with promises it’s just `.then()` for success and `.catch()` for failure. 
+It also gives you `async` and `await` which makes the code look like you’re reading out 
+a regular sentence - making it really smooth, and really understandable.
+
+------------------------------------------------------------
+
+3. What is the purpose of the .then() and .catch() methods in Fetch?
+
+In Fetch, .then() is used when a request works successfully. You put code inside
+.then() to get the data from the server and use it in your program. It helps your 
+program continue running smoothly while working with the response.
+
+When there’s a problem, such as a lost connection or server failure, the code goes to
+.catch() method. This will allow you to replace the breaking error of the page with a 
+more user-friendly error message.
+
+------------------------------------------------------------
+
+4. What is the outcome of sending a POST request to the placeholder API?
+
+If a POST request is sent to the JSONPlaceholder API it will not actually save your data 
+because the site is only for testing. However, it will simulate creating the post 
+and return a fake response that includes a generated ID and the data you sent.
